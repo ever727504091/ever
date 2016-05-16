@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rKb-ev-RV8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--积分-->
+        <scene sceneID="Gyu-5Q-RZI">
+            <objects>
+                <tableViewController storyboardIdentifier="integralView" id="VbR-Mp-gYg" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="IoW-hG-G6n">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mvc-h0-5M7">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mvc-h0-5M7" id="nBa-hn-UzH">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="VbR-Mp-gYg" id="8Na-Q2-33X"/>
+                            <outlet property="delegate" destination="VbR-Mp-gYg" id="1mY-eY-57n"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="积分" id="0pF-JS-wwK"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LZp-XK-4Sk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831" y="357"/>
+        </scene>
+        <!--积分-->
+        <scene sceneID="EVQ-R1-2ZO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rKb-ev-RV8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="积分" image="tabbar_score_new_select" selectedImage="tabbar_score_new_unselect" id="pna-kW-chP"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aHK-o3-HTr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VbR-Mp-gYg" kind="relationship" relationship="rootViewController" id="2pH-ZL-WQf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3aN-2z-ngs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="299" y="357"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabbar_score_new_select" width="50" height="50"/>
+        <image name="tabbar_score_new_unselect" width="50" height="50"/>
+    </resources>
+</document>
